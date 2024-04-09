@@ -18,4 +18,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/setup-python@v5
+    - name: Python Setup
+      uses: actions/setup-python@v5
+    - name: Verify Python installation
+      uses: python --version
+    
